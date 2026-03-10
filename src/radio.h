@@ -60,12 +60,12 @@
 /**
  * Number of extended addresses in @ref ext_src_match_data_t.
  */
-#define PLATFORM_RADIO_EXTADD_SRC_MATCH_NUM 10
+#define PLATFORM_RADIO_EXTADD_SRC_MATCH_NUM 64
 
 /**
  * Number of short addresses in @ref short_src_match_data_t.
  */
-#define PLATFORM_RADIO_SHORTADD_SRC_MATCH_NUM 10
+#define PLATFORM_RADIO_SHORTADD_SRC_MATCH_NUM 64
 
 /**
  * size of length field in receive struct.

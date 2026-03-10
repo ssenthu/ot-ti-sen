@@ -81,6 +81,12 @@ for(var setting in ccfgSettings)
     Device[setting] = ccfgSettings[setting];
 }
 
+/* Bootloader Backdoor Configuration */
+Device.enableBootloader = true;
+Device.enableBootloaderBackdoor = true;
+Device.dioBootloaderBackdoor = 11;    // DIO11 (0xB)
+Device.levelBootloaderBackdoor = "Active low";
+
 
 
 /* UART */
@@ -105,10 +111,10 @@ GPIO4.$name                       = "CONFIG_GPIO_RLED";
 /* SPI for NCP */
 SPI2.$name                   = "CONFIG_SPI_1";
 SPI2.mode                    = "Four Pin SS Active Low";
-SPI2.spi.pociPin.$assign     = "DIO24"
-SPI2.spi.picoPin.$assign     = "DIO25"
-SPI2.spi.sclkPin.$assign     = "DIO26"
-SPI2.spi.csnPin.$assign      = "DIO27"
+//SPI2.spi.pociPin.$assign     = "DIO24"
+//SPI2.spi.picoPin.$assign     = "DIO25"
+//SPI2.spi.sclkPin.$assign     = "DIO26"
+//SPI2.spi.csnPin.$assign      = "DIO27"
 
 GPIO5.$name                  = "CONFIG_SPINEL_INT";
 GPIO5.mode                   = "Output";
